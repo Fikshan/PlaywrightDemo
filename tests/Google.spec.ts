@@ -10,7 +10,13 @@ test('D Open Facebook and check title', async ({ page }) => {
     await expect(page).toHaveTitle(/Facebook/);
   });
 
-test('E Open Facebook and check title', async ({ page }) => {
+test('E Open Gmail and check title', async ({ page }) => {
     await page.goto('https://www.gmail.com');
     await expect(page).toHaveTitle(/Gmail/);
+  });
+   
+
+  test('E Open Insta and check title', async ({ page }) => {
+    await page.goto('https://www.instagram.com');
+    await expect(page).toHaveTitle(/Instagram/);
   });
