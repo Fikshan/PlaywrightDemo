@@ -12,5 +12,5 @@ test('D Open Facebook and check title', async ({ page }) => {
 
 test('E Open Facebook and check title', async ({ page }) => {
     await page.goto('https://www.gmail.com');
-    await expect(page).toHaveTitle(/Facebook/);
+    await expect(page).toHaveTitle(/Gmail/);
   });
